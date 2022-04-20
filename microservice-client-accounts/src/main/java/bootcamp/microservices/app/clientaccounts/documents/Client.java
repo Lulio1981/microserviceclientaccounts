@@ -11,21 +11,29 @@ import lombok.Data;
 
 @Data
 @Document
-public class Account implements Serializable {
+public class Client implements Serializable {
 
-	private static final long serialVersionUID = -2192062026580323624L;
+	private static final long serialVersionUID = -2581578749386650914L;
 
 	private String id;
 
-	private String accountNumber;
+	private String documentNumber;
+
+	private String name;
+
+	private String lastName;
+
+	private Integer age;
 	
-	private String interbankAccountNumber;
+	private String email;
+	
+	private String profile;
 
-	private String idAccountType;
+	private Integer address;
 
-	private String idClient;
+	private String phoneNumber;
 
-	private Double minimumBalance;
+	private String mobilePhone;
 
 	@JsonFormat(pattern = "dd-MM-yyyy")
 	private Date createDate;

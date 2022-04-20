@@ -11,21 +11,29 @@ import lombok.Data;
 
 @Data
 @Document
-public class Account implements Serializable {
+public class ClientCreditCard implements Serializable {
 
-	private static final long serialVersionUID = -2192062026580323624L;
+	private static final long serialVersionUID = 7168216367628318040L;
 
 	private String id;
 
-	private String accountNumber;
-	
-	private String interbankAccountNumber;
-
-	private String idAccountType;
+	private String creditCardNumber;
 
 	private String idClient;
 
-	private Double minimumBalance;
+	private Double creditLine;
+
+	private Date expeditionDate;
+
+	private Date expirationDate;
+
+	private Date deadline;
+
+	private Date paymentDate;
+
+	private Double interestRate;
+
+	private Double moratoriumInterestRate;
 
 	@JsonFormat(pattern = "dd-MM-yyyy")
 	private Date createDate;
@@ -36,4 +44,7 @@ public class Account implements Serializable {
 	private Date modifyDate;
 
 	private String modifyUser;
+
+	private Integer status;
+
 }
