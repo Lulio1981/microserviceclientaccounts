@@ -18,7 +18,7 @@ public class Account implements Serializable {
 	private String id;
 
 	private String accountNumber;
-	
+
 	private String interbankAccountNumber;
 
 	private String idAccountType;
@@ -26,6 +26,8 @@ public class Account implements Serializable {
 	private String idClient;
 
 	private Double minimumBalance;
+
+	private Integer operationsNumber;
 
 	@JsonFormat(pattern = "dd-MM-yyyy")
 	private Date createDate;
