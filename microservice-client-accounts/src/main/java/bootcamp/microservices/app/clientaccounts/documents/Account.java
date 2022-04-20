@@ -23,7 +23,7 @@ public class Account implements Serializable {
 
 	private String idClient;
 
-	private Double amount;
+	private Double minimumBalance;
 
 	@JsonFormat(pattern = "dd-MM-yyyy")
 	private Date createDate;
